@@ -1,0 +1,1164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgb(27, 181, 233);
+    padding: 1px;
+    margin: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.banner{
+    height: 580px;
+    width: 100%;
+    background-image: url("../assets/img/bannerPrincipal1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/*Botones*/
+
+.botonesPrincipales{
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(136, 132, 123);
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.fuenteBoton{
+    font-size: 20px;
+}
+
+/*inicio de sesion*/
+.cardInicioSesion{
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+    align-items: center;
+}
+
+.inicioSesion{
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 10px;
+    background-color: white;
+    max-width: 90%;
+}
+
+.botonesregistro{
+    list-style: none;
+    max-width: 25%;
+    margin-left: 28px;
+}
+.footerInicio{
+    display: flex;
+}
+.imgFooterInicio{
+    display: flex;
+}
+.imgFooterInicio img{
+    height: 120px;
+}
+
+.fuente{
+    font-size: 24px;
+}
+.fuenteBoton{
+    font-size: 14px;
+}
+
+@media(max-width:768px){
+    .banner{
+        height: 350px;
+        width: 100%;
+    }
+    .cardInicioSesion{
+        max-width: 25%;
+    }
+    .inicioSesion{
+        max-width: 80%;
+    }
+    .botonesregistro{
+        display: flex;
+        flex-direction: column;
+        max-width: 15%;
+        align-items: center;
+    }
+    .imgFooterInicio img{
+        height: 70px;
+    }
+    .fuente{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:425px){
+    .banner{
+        background-image: url("../assets/img/bannerInicio320.png");
+        height: 500px;
+        width: 100%;
+    }
+    .cardInicioSesion{
+        flex-direction: row;
+        justify-content: center;
+        max-width: 100%;
+    }
+    .inicioSesion{
+        display: flex;
+        justify-content: center;
+        gap: 1px;
+        margin-left: 5px;
+        border-radius: 10px;
+        width: 70%;
+    }
+    .botonesregistro{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 100%;
+        align-items: center;
+        margin: 0;
+    }
+    .fuente{
+        font-size: 16px;
+    }
+    .botonesPrincipales{
+        font-size: 10px;
+    }
+    .fuenteBoton{
+        font-size: 10px;
+    }
+}
+
+
+/*registro*/
+
+.formularioGeneral{
+    margin: 1px;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    max-width: 20%;
+    align-items: center;
+}
+
+.formularioEtiquetas{
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.botonIngresarSinRegistro{
+   margin-left: 55px;
+}
+
+.footerRegistro{
+    display: flex;
+}
+.imgFooterRegistro{
+    display: flex;
+}
+.imgFooterRegistro img{
+    height: 120px;
+}
+
+@media(max-width:768px){
+    .banner{
+        height: 395px;
+        width: 100%;
+    }
+    .formularioGeneral{
+        margin-left: 22px;
+        max-width: 20%;
+
+    }
+    
+    .formularioEtiquetas{
+        margin: 5px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        border-radius: 10px;
+        background-color: white;
+        max-width: 80%;
+    }
+    .fuente{
+        font-size: 15px;
+    }
+    .imgFooterRegistro img{
+        height: 70px;
+    }
+    .botonIngresarSinRegistro{
+        margin-left: 25px;
+    }
+    .fuenteBoton{
+        font-size: 10px;
+    }
+}
+
+@media(max-width:425px){
+    .formularioGeneral{
+        margin: 0px;
+        padding: 1px;
+        gap: 1px;
+        border-radius: 10px;
+        max-width: 120%;
+    }
+    .formularioEtiquetas{
+        margin-left: 10px;
+        padding: 1px;
+        max-width: 120%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 2px;
+        border-radius: 10px;
+        background-color: rgb(230, 229, 229);
+    }
+    .formularioEtiquetas input{
+        max-width: 141px;
+    }
+    .fuente{
+        font-size: 12px;
+    }
+}
+
+@media(max-width:375px){
+    .formularioEtiquetas input{
+        max-width: 120px;
+    }
+}
+
+@media(max-width:320px){
+    .formularioEtiquetas input{
+        max-width: 90px;
+    }
+    .imgFooterInicio img{
+        height: 70px;
+    }
+    .formularioEtiquetas input{
+        max-width: 100px;
+    }
+    
+}
+/*pagina principal*/
+
+.botonHeaderPaginaPrincipal{
+    display: flex;
+    align-items: center;
+}
+
+.imagenPaginaPrincipal{
+    margin-top: 10px;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.listaCategorias{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(158, 135, 135);
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.esquemaProductos{
+    display: flex;
+    width: 1000px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    margin: auto;
+}
+
+.cardProductos{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 200px;
+    height: 250px;
+    background-color: lightslategray;
+    margin: 10PX;
+    flex-wrap: nowrap;
+} 
+
+.cardProductos div img{
+    width: 90%;
+    height: 95%;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.cardProductos div{
+    width: 100%;
+    height: 130px;
+}
+
+
+.cardProductos h3{
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.cardProductos p{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.cardProductos button{
+    margin-left: 80px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.botonCarrito{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.footerPrincipal{
+    display: flex;
+}
+.imgFooterPrincipal{
+    display: flex;
+}
+.imgFooterPrincipal img{
+    height: 120px;
+}
+
+@media(max-width:768px){
+    .esquemaProductos{
+        width: 760px;
+    }
+    .imgFooterPrincipal img{
+        height: 70px;
+    }
+    .imgFooterPrincipal{
+        display: flex;
+    }
+}
+
+@media(max-width:425px){
+    .esquemaProductos{
+        width: 400px;
+        gap: 30px;
+    }
+
+    .cardProductos{
+        border: 2px solid black;
+        border-radius: 5px;
+        width: 380px;
+        height: 150px;
+        background-color: lightslategray;
+        margin: 10PX;
+        display: flex;
+        flex-wrap: wrap;
+    } 
+    
+    .cardProductos div img{
+        width: 30%;
+        height: 95%;
+        object-fit: cover;
+        margin: 10px;
+    }
+    
+    .cardProductos div{
+        width: 100%;
+        height: 130px;
+    }
+    
+    .cardProductos h3{
+        position: absolute;
+        text-align: center;
+        margin-left: 140px;
+        margin-bottom: 5px;
+        margin-top: 15px;
+    }
+    
+    .cardProductos p{
+        position: absolute;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 140px;
+    }
+    
+    .cardProductos button{
+        position: absolute;
+        cursor: pointer;
+        margin-left: 250px;
+        margin-top: 100px;
+    }
+}
+
+@media(max-width:320px){
+    .imagenPaginaPrincipal{
+        margin-top: 10px;
+        width: 100%;
+        height: 190px;
+        display: flex;
+        justify-content: center;
+    }
+    .listaCategorias{
+        flex-wrap: wrap;
+    }
+    .esquemaProductos{
+        width: 300px;
+        gap: 5px;
+    }
+
+    .cardProductos{
+        border: 2px solid black;
+        border-radius: 5px;
+        width: 280px;
+        height: 130px;
+        background-color: lightslategray;
+        margin: 10PX;
+        display: flex;
+        flex-wrap: wrap;
+    } 
+    
+    .cardProductos div img{
+        width: 30%;
+        height: 95%;
+        object-fit: cover;
+        margin: 10px;
+    }
+    
+    .cardProductos div{
+        width: 100%;
+        height: 100px;
+    }
+    
+    .cardProductos h3{
+        position: absolute;
+        text-align: center;
+        margin-left: 100px;
+        margin-bottom: 5px;
+        margin-top: 15px;
+    }
+    
+    .cardProductos p{
+        position: absolute;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+    
+    .cardProductos button{
+        position: absolute;
+        cursor: pointer;
+        margin-left: 160px;
+        margin-top: 100px;
+    }
+
+    .imgFooterPrincipal img{
+        height: 50px;
+    }
+    .fuente{
+        font-size: 12px;
+    }
+}
+
+
+/*Mi cuenta*/
+
+.botonHeaderMiCuenta{
+    display: flex;
+    align-items: center;
+}
+
+.imgLogin{
+    margin: 1px;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    max-width: 20%;
+}
+
+.imgLogin img{
+    width: 100px;
+    height: 100px;
+    background-image: url("../assets/img/user.png");
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.cardDatosMiCuenta{
+    margin: 1px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    max-width: 20%;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.datosMiCuenta{
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 8px;
+    border-radius: 10px;
+}
+
+.botonesMiCuenta{
+    margin-top: -8px;
+    list-style: none;
+}
+
+.footerCuenta{
+    display: flex;
+}
+.imgFooterCuenta{
+    display: flex;
+}
+.imgFooterCuenta img{
+    height: 120px;
+}
+
+@media(max-width:768px){
+    .imgLogin img{
+        width: 70px;
+        height: 70px;
+        background-image: url("../assets/img/user.png");
+        background-size: cover;
+        border-radius: 50%;
+    }
+
+    .cardDatosMiCuenta{
+        max-width: 22%;
+        gap: 6px;
+    }
+
+    .datosMiCuenta{
+        font-size: 14px;
+    }
+
+    .footerCuenta{
+        display: flex;
+    }
+    .imgFooterCuenta{
+        display: flex;
+    }
+    .imgFooterCuenta img{
+        height: 100px;
+    }
+    .fuente{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:425px){
+    .datosArticle{
+        display: flex;
+    }
+
+    .cardDatosMiCuenta{
+        margin-left: 5px;
+        padding: 1px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1px;
+        border-radius: 10px;
+    }
+
+    .botonesMiCuenta{
+        margin-top: -140px;
+        margin-left: 290px;
+    }
+    .fuente{
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    .imgFooterCuenta img{
+        height: 70px;
+    }
+}
+
+@media(max-width:320px){
+    .imgLogin img{
+        width: 40px;
+        height: 40px;
+    }
+    .fuente{
+        font-size: 10px;
+    }
+    .botonesMiCuenta{
+        margin-top: -155px;
+        margin-left: 240px;
+    }
+    .cardDatosMiCuenta{
+        margin-left: -10px;
+        margin-top: -5px;
+    }
+}
+
+/*tres puntitos*/
+
+.listaNav{
+    list-style: none;
+}
+
+.infoEmpresa1{
+    margin-top: 80px;
+    margin-left: 13px;
+}
+
+.infoEmpresa{
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 18%;
+}
+
+@media(max-width:768px){
+    .infoEmpresa1{
+        margin-top: 1px;
+        margin-left: 3px;
+    }
+
+    .infoEmpresa{
+        margin: 1px;
+        max-width: 22%;
+    }
+}
+
+@media(max-width:425px){
+    .banner h1{
+        font-size: 16px;
+    }
+    .listaNav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .infoEmpresa{
+        margin-top: 5px;
+        max-width: 80%;
+        font-size: 10px;
+    }
+}
+
+/*Carrito*/
+
+.botonHeaderCarrito{
+    display: flex;
+    align-items: center;
+}
+
+.imgCarrito{
+    margin: 1px;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    max-width: 20%;
+}
+
+section h1{
+    text-shadow: 10px 5px 1px gold;
+}
+main h1{
+    color: brown;
+}
+
+.CardItemsCarrito{
+    display: flex;
+    justify-content: center;
+}
+
+.itemsCarrito{
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    margin-left: 20px;
+    padding: 1px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 900px;
+    height: 40px;
+    display: grid;
+    grid-template-columns: .5fr 3fr .5fr .5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "cant producto unitario total"
+    ;
+}
+.cant{
+    grid-area: cant;
+    margin-left: 5px;
+    align-self: center;
+}
+.producto{
+    grid-area: producto;
+    align-self: center;
+}
+.unitario{
+    grid-area: unitario;
+    align-self: center;
+}
+
+.total{
+    grid-area: total;
+    align-self: center;
+}
+
+.todosProductos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardProdCarrito{
+    margin-left: 20px;
+    margin-bottom: 1px;
+    padding: 1px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 900px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: .25fr .25fr 3fr .5fr .5fr;
+    grid-template-rows: repeat(2 1fr);
+    grid-template-areas:
+    "botonesSumaResta cantidadProducto descripcionProducto precioUnitario precioTotal"
+    "botonesSumaResta cantidadProducto descripcionProducto precioUnitario precioTotal"
+    ;
+}
+
+.cantidadProducto{
+    grid-area: cantidadProducto;
+    align-self: center;
+}
+
+.descripcionProducto{
+    grid-area: descripcionProducto;
+    align-self: center;
+}
+
+.precioUnitario{
+    grid-area: precioUnitario;
+    align-self: center;
+}
+
+.botonesSumaResta{
+    max-width: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1px;
+    grid-area: botonesSumaResta;
+}
+
+.precioTotal{
+    grid-area: precioTotal;
+    align-self: center;
+}
+
+.cardTotalPedido{
+    display: flex;
+    justify-content: center;
+}
+
+.totalPedido{
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 900px;
+    height: 80px;
+}
+
+.footerCarrito{
+    display: flex;
+}
+.imgFooterCarrito{
+    display: flex;
+}
+.imgFooterCarrito img{
+    height: 120px;
+}
+
+@media(max-width:768px){
+    .itemsCarrito{
+        gap: 100px;
+        width: 700px;
+        height: 80px;
+    }
+
+    .itemsCarrito{
+        margin-left: 10px;
+        width: 700px;
+        height: 60px;
+    }
+    .cardProdCarrito{
+        margin-left: 10px;
+        gap: 5px;
+        border: 2px solid black;
+        width: 700px;
+        height: 80px;
+    }
+
+    .cantidadProducto{
+        margin-right: 90px;
+    }
+    
+    .descripcionProducto{
+        margin-right: 200px;
+    }
+    
+    .precioUnitario{
+        margin-right: 100px;
+    }
+
+    .totalPedido{
+        margin: 10px;
+        margin-left: 10px;
+        padding: 1px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        border: 2px solid black;
+        width: 700px;
+        height: 80px;
+    }
+    .footerCarrito{
+        display: flex;
+    }
+    .imgFooterCarrito{
+        display: flex;
+    }
+    .imgFooterCarrito img{
+        height: 100px;
+    }
+}
+
+@media(max-width:425px){
+    .itemsCarrito{
+        gap: 5px;
+        width: 400px;
+        height: 80px;
+    }
+
+    .itemsCarrito{
+        margin-left: 5px;
+        width: 400px;
+        height: 60px;
+    }
+    .cardProdCarrito{
+        margin-left: 5px;
+        gap: 3px;
+        width: 400px;
+        height: 80px;
+    }
+
+    .cantidadProducto{
+        margin-right: 5px;
+    }
+    
+    .descripcionProducto{
+        margin-right: 120px;
+    }
+    
+    .precioUnitario{
+        margin-right: 10px;
+    }
+
+    .totalPedido{
+        margin: 10px;
+        margin-left: 05px;
+        padding: 1px;
+        gap: 40px;
+        border: 2px solid black;
+        width: 400px;
+        height: 80px;
+    }
+    .footerCarrito{
+        display: flex;
+    }
+    .imgFooterCarrito{
+        display: flex;
+    }
+    .imgFooterCarrito img{
+        height: 70px;
+    }
+}
+
+@media(max-width:375px){
+    .itemsCarrito{
+        width: 360px;
+
+    }
+
+    .itemsCarrito{
+        width: 360px;
+
+    }
+
+    .itemCarritoProducto{
+        margin-right: 100px;
+        padding: 1px;
+    }
+    .cardProdCarrito{
+        width: 360px;
+    }
+
+    .cantidadProducto{
+        margin-right: 5px;
+    }
+    
+    .descripcionProducto{
+        margin-right: 80px;
+    }
+    
+    .precioUnitario{
+        margin-right: 10px;
+    }
+
+    .totalPedido{
+        width: 360px;
+        height: 80px;
+        gap: 10px;
+    }
+
+    .footerCarrito{
+        display: flex;
+    }
+    .imgFooterCarrito{
+        display: flex;
+    }
+    .imgFooterCarrito img{
+        height: 60px;
+    }
+}
+
+@media(max-width:320px){
+    .itemsCarrito{
+        gap: 5px;
+        width: 300px;
+        height: 80px;
+    }
+
+    .itemsCarrito{
+        margin-left: 5px;
+        width: 300px;
+        height: 60px;
+    }
+
+    .itemCarritoProducto{
+        margin-right: 100px;
+        padding: 1px;
+    }
+    .cardProdCarrito{
+        margin-left: 5px;
+        gap: 3px;
+        width: 300px;
+        height: 80px;
+    }
+
+    .cantidadProducto{
+        margin-right: 5px;
+    }
+    
+    .descripcionProducto{
+        margin-right: 80px;
+    }
+    
+    .precioUnitario{
+        margin-right: 10px;
+    }
+
+    .totalPedido{
+        width: 300px;
+        height: 80px;
+        gap: 10px;
+    }
+
+    .footerCarrito{
+        display: flex;
+    }
+    .imgFooterCarrito{
+        display: flex;
+    }
+    .imgFooterCarrito img{
+        height: 60px;
+    }
+}
+
+
+/*Mis Pedidos*/
+
+.leyendaCantPedidos{
+    width: 200px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 1px;
+    margin: auto;
+    margin-top: 35px;
+    background-color: rgb(158, 135, 135);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.esquemaPedidos{
+    display: flex;
+    width: auto
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: auto;
+}
+
+.cardPedidos{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 900px;
+    height: 80px;
+    background-color: lightslategray;
+    margin: 10PX;
+} 
+.pedidoYfecha{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 5px 5px 0px 5px;
+}
+
+.importeYestado{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 10px 5px 0px 5px;
+}
+
+.footerPedidos{
+    display: flex;
+}
+.imgFooterPedidos{
+    display: flex;
+}
+.imgFooterPedidos img{
+    height: 120px;
+}
+
+@media(max-width:768px){
+    .cardPedidos{
+        width: 700px;
+    } 
+
+    .footerPedidos{
+        display: flex;
+    }
+    .imgFooterPedidos{
+        display: flex;
+    }
+    .imgFooterPedidos img{
+        height: 100px;
+    }
+}
+
+@media(max-width:425px){
+
+    .esquemaPedidos{
+        gap: 5px;
+    }
+
+    .pedidoYfecha{
+        font-size: 12px;
+    }
+
+    .importeYestado{
+        font-size: 12px;
+    }
+    .footerPedidos{
+        display: flex;
+    }
+    .imgFooterPedidos{
+        display: flex;
+    }
+    .imgFooterPedidos img{
+        height: 70px;
+    }
+}
+
+@media(max-width:320px){
+    .footerPedidos{
+        display: flex;
+    }
+    .imgFooterPedidos{
+        display: flex;
+    }
+    .imgFooterPedidos img{
+        height: 60px;
+    }
+    .pedidoYfecha{
+        font-size: 12px;
+    }
+}
+
+
+
+
+footer{
+    background-color: rgb(27, 181, 233);
+    padding: 1px;
+    margin: 1px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    
+}
