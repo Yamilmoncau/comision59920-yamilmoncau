@@ -285,6 +285,7 @@ main h1{
 .CardItemsCarrito{
     display: flex;
     justify-content: center;
+    margin-bottom: 5px;
 }
 .itemsCarrito{
     list-style: none;
@@ -328,7 +329,7 @@ main h1{
 }
 .cardProdCarrito{
     margin-left: 20px;
-    margin-bottom: 1px;
+    margin-bottom: 5px;
     padding: 1px;
     border: 2px solid black;
     border-radius: 5px;
@@ -369,6 +370,8 @@ main h1{
 .cardTotalPedido{
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 .totalPedido{
     margin-top: 10px;
@@ -416,6 +419,7 @@ main h1{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: center;
     gap: 30px;
     margin: auto;
 }
