@@ -1,0 +1,34 @@
+/*registro*/
+.formularioGeneral{
+    margin: 1px;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    max-width: 20%;
+    align-items: center;
+}
+.formularioEtiquetas{
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 10px;
+    background-color: white;
+}
+.botonIngresarSinRegistro{
+    margin-left: 55px;
+}
+.footerRegistro{
+    display: flex;
+}
+.imgFooterRegistro{
+    display: flex;
+}
+.imgFooterRegistro{
+    img{
+        height: 120px;
+    }
+
+}

@@ -1,0 +1,18 @@
+/*tres puntitos*/
+.listaNav{
+    list-style: none;
+}
+.infoEmpresa1{
+    margin-top: 80px;
+    margin-left: 13px;
+}
+.infoEmpresa{
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 18%;
+}

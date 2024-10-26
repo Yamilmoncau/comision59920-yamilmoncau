@@ -1,0 +1,123 @@
+@media(max-width:330px){
+    /*Registro*/
+    .formularioEtiquetas{
+        input{
+            max-width: 90px;
+        }
+    }
+    .imgFooterInicio{
+        img{
+            height: 70px;
+        }
+    }
+    .formularioEtiquetas{
+        input{
+            max-width: 100px;
+        }
+    }
+    .botonIngresarSinRegistro{
+        margin-left: 100px;
+    }
+    /*Mi cuenta*/
+    .fuente{
+        font-size: map-get($fuentes-sitio, xs );
+    }
+    .tituloMiCuenta{
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .botonMiCuenta{
+        font-size: 8px;
+    }
+    .fuenteBoton{
+        font-size: map-get($fuentes-sitio, xs );
+    }
+    .imgLogin{
+        img{
+            margin-left: 20px;
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .cardDatosMiCuenta{
+        margin-left: 1px;
+        max-width: 50%;
+    }
+    .botonesMiCuenta{
+        margin-top: -150px;
+        margin-left: 215px;
+    }
+    /*Mis pedidos*/
+    .tituloMisPedidos{
+        font-size: map-get($fuentes-sitio, sm );
+    }
+    .cardPedidos{
+        width: 300px;
+    }
+    .footerPedidos{
+        display: flex;
+    }
+    .imgFooterPedidos{
+        display: flex;
+    }
+    .imgFooterPedidos{
+        img{
+            height: 60px;
+        }
+    }
+    .pedidoYfecha{
+        font-size: 12px;
+    } 
+    /*Carrito*/
+    .itemsCarrito{
+        gap: 5px;
+        width: 300px;
+        height: 80px;
+        margin-left: 5px;
+        width: 300px;
+        height: 60px;
+    }
+    .itemCarritoProducto{
+        margin-right: 100px;
+        padding: 1px;
+    }
+    .cardProdCarrito{
+        margin-left: 5px;
+        gap: 3px;
+        width: 300px;
+        height: 80px;
+    }
+    .cantidadProducto{
+        margin-right: 5px;
+    }
+    .descripcionProducto{
+        margin-right: 80px;
+    }
+    .precioUnitario{
+        margin-right: 5px;
+        font-size: map-get($fuentes-sitio, sm );
+        margin-left: -30px;
+    }
+    .totalPedido{
+        width: 300px;
+        height: 80px;
+        gap: 10px;
+    }
+    .footerCarrito{
+        display: flex;
+    }
+    .imgFooterCarrito{
+        display: flex;
+    }
+    .imgFooterCarrito{
+        img{
+            height: 60px;
+        }
+    }
+    .precioTotal{
+        font-size: map-get($fuentes-sitio , sm );
+    }
+    h3{
+        font-size: map-get($fuentes-sitio , sm );
+    }
+}

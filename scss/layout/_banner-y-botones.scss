@@ -1,0 +1,23 @@
+.banner{
+    height: 580px;
+    width: 100%;
+    background-image: url("../../assets/img/bannerPrincipal1.png");
+    background-image: url("../assets/img/bannerPrincipal1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*Botones*/
+.botonesPrincipales{
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(136, 132, 123);
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.fuenteBoton{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

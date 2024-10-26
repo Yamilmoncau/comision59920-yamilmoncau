@@ -1,0 +1,52 @@
+/*Mis Pedidos*/
+.leyendaCantPedidos{
+    width: 200px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 1px;
+    margin: auto;
+    margin-top: 35px;
+    background-color: rgb(158, 135, 135);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.esquemaPedidos{
+    @include flexcol;
+    flex-wrap: wrap;
+    width: auto;
+    gap: 30px;
+    margin: auto;
+}
+.cardPedidos{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 900px;
+    height: 80px;
+    background-color: lightslategray;
+    margin: 10PX;
+} 
+.pedidoYfecha{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 5px 5px 0px 5px;
+}
+.importeYestado{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 10px 5px 0px 5px;
+}
+.footerPedidos{
+    display: flex;
+}
+.imgFooterPedidos{
+    display: flex;
+}
+.imgFooterPedidos{
+    img{
+        height: 120px;
+    }
+}

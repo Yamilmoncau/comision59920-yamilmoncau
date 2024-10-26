@@ -1,0 +1,208 @@
+@media(max-width:780px){
+    /*Inicio de sesion*/
+        header{
+            height: 120px;
+            h1{
+                font-size: 80px;
+                font-weight: bold;
+                margin-top: 10px;
+                margin-left: 10px;
+                margin-bottom: 10px;
+                margin-right: 10px;
+                color: white;
+            }
+        }
+
+        .banner{
+            height: 500px;
+        }
+        .cardInicioSesion{
+            max-width: 30%;
+        }
+        .inicioSesion{
+            max-width: 90%;
+        }
+        .botonesregistro{
+            display: flex;
+            flex-direction: column;
+            max-width: 20%;
+            align-items: center;
+        }
+        .imgFooterInicio{
+            display: flex;
+            align-items: center;
+        }
+        .imgFooterInicio{
+            img{
+            height: 70px;
+            }
+        }
+        .fuente{
+            font-size: map-get($fuentes-sitio , md );
+        }
+        /*Registro*/
+        .formularioGeneral{
+            margin-left: 22px;
+            max-width: 28%;
+        }
+        .formularioEtiquetas{
+            margin: 5px;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            border-radius: 10px;
+            background-color: white;
+            max-width: 80%;
+        }
+        .imgFooterRegistro{
+            display: flex;
+            align-items: center;
+        }
+        .imgFooterRegistro{
+            img{
+            height: 70px;
+            }
+        }
+        .botonIngresarSinRegistro{
+            margin-left: 55px;
+        }
+        .fuenteBoton{
+            font-size: map-get($fuentes-sitio, xs );
+        }
+        footer{
+            p{
+            display: flex;
+            align-items: center;
+            }
+        }
+        /*Pagina principal*/
+        header{
+            div{
+                img{
+            margin-top: 25px;
+                }
+            }
+        }
+        .esquemaProductos{
+            width: 760px;
+        }
+        .imgFooterPrincipal img{
+            height: 70px;
+        }
+        .imgFooterPrincipal{
+            display: flex;
+            align-items: center;
+        }
+        /*Mi cuenta*/
+        .imgLogin{
+            img{
+            margin-left: 60px;
+            width: 70px;
+            height: 70px;
+            background-image: url("../assets/img/user.png");
+            background-size: cover;
+            border-radius: 50%;
+            }
+        }
+        .cardDatosMiCuenta{
+            max-width: 30%;
+            gap: 6px;
+        }
+        .datosMiCuenta{
+            font-size: map-get($fuentes-sitio , xs );
+        }
+        .footerCuenta{
+            display: flex;
+        }
+        .imgFooterCuenta{
+            display: flex;
+            align-items: center;
+        }
+        .imgFooterCuenta{
+            img{
+            height: 70px;
+            }
+        }
+        /*Tres puntitos*/
+        .infoEmpresa1{
+            margin-top: 1px;
+            margin-left: 3px;
+        }
+        .infoEmpresa{
+            margin: 1px;
+            max-width: 22%;
+        }
+        /*Carrito*/
+        .itemsCarrito{
+            gap: 150px;
+            width: 700px;
+            height: 70px;
+            margin-left: 10px;
+        }
+        .cardProdCarrito{
+            margin-left: 10px;
+            gap: 5px;
+            border: 2px solid black;
+            width: 700px;
+            height: 80px;
+        }
+        .cantidadProducto{
+            margin-right: 90px;
+        }
+        .descripcionProducto{
+            margin-right: 200px;
+        }
+        .precioUnitario{
+            margin-right: 100px;
+        }
+        .totalPedido{
+            margin: 10px;
+            margin-left: 10px;
+            padding: 1px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            border: 2px solid black;
+            width: 700px;
+            height: 80px;
+        }
+        .footerCarrito{
+            display: flex;
+            align-items: center;
+        }
+        .imgFooterCarrito{
+            display: flex;
+            align-items: center;
+        }
+        .imgFooterCarrito{
+            img{
+            height: 70px;
+            }
+        }
+        /*Mis pedidos*/
+        .botonPedidos{
+            margin-top: 40px;
+        }
+        .cardPedidos{
+            width: 700px;
+            align-self: center;
+        } 
+        .footerPedidos{
+            display: flex;
+            align-items: center;
+        }
+        .imgFooterPedidos{
+            display: flex;
+        }
+        .imgFooterPedidos{
+            img{
+            height: 70px;
+            }
+        }
+        footer{
+            height: 120px;
+        }
+    }

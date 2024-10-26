@@ -1,0 +1,265 @@
+@media(max-width:600px){
+    header{
+        height: 70px;
+        h1{
+            font-size: 40px;
+        }
+    }
+    
+    /*Inicio de sesion*/
+    .banner{
+        background-image: url("../assets/img/bannerInicio320.png");
+        height: 500px;
+        width: 100%;
+    }
+    .cardInicioSesion{
+        flex-direction: row;
+        justify-content: center;
+        max-width: 100%;
+        align-items: center;
+        margin-left: 50px;
+    }
+    .inicioSesion{
+        display: flex;
+        justify-content: center;
+        gap: 1px;
+        margin-left: 5px;
+        border-radius: 10px;
+        width: 70%;
+    }
+    .botonesregistro{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 100%;
+        align-items: center;
+        margin: 10;
+    }
+    .fuente{
+        font-size: map-get($fuentes-sitio, sm );
+    }
+    .botonesPrincipales{
+        font-size: map-get($fuentes-sitio , xs );
+    }
+    .fuenteBoton{
+        font-size: map-get($fuentes-sitio, xs );
+    }
+    /*Registro*/
+    .formularioGeneral{
+        margin: 0px;
+        padding: 1px;
+        gap: 1px;
+        border-radius: 10px;
+        max-width: 120%;
+    }
+    .formularioEtiquetas{
+        margin-left: 10px;
+        padding: 1px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 2px;
+        border-radius: 10px;
+        background-color: rgb(230, 229, 229);
+    }
+    .formularioEtiquetas{
+        input{
+        max-width: 142px;
+        }
+    }
+    .botonIngresarSinRegistro{
+        margin-left: 150px;
+    }
+    /*Pagina principal*/
+    header{
+        div{
+            img{
+                margin-top: 2px;
+            }
+        }
+    }
+    .listaCategorias{
+        flex-wrap: wrap;
+    }
+    .esquemaProductos{
+        width: 400px;
+        gap: 30px;
+    }
+    .cardProductos{
+        border: 2px solid black;
+        border-radius: 5px;
+        width: 380px;
+        height: 150px;
+        background-color: lightslategray;
+        margin: 10PX;
+        display: flex;
+        flex-wrap: wrap;
+    } 
+    .cardProductos{
+        div{
+            img{
+                width: 30%;
+                height: 95%;
+                object-fit: cover;
+                margin: 10px;
+            }
+        }
+    }
+    .cardProductos{
+        div{
+            width: 100%;
+            height: 130px;
+        }
+    }
+    .cardProductos h3{
+        position: absolute;
+        text-align: center;
+        margin-left: 140px;
+        margin-bottom: 5px;
+        margin-top: 15px;
+    }
+    .cardProductos p{
+        position: absolute;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 140px;
+    }
+    .cardProductos{
+        button{
+            position: absolute;
+            cursor: pointer;
+            margin-left: 250px;
+            margin-top: 100px;
+        }
+    }
+    /*Mi cuenta*/
+    .datosArticle{
+        display: flex;
+    }
+    .imgLogin{
+        margin-left: -20px;
+    }
+    .cardDatosMiCuenta{
+        margin-left: 15px;
+        padding: 1px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1px;
+        border-radius: 10px;
+    }
+    .botonesMiCuenta{
+        margin-top: -140px;
+        margin-left: 300px;
+    }
+    .fuente{
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .imgFooterCuenta img{
+        height: 70px;
+    }
+    /*Tres puntitos*/
+    .banner h1{
+        font-size: 20px;
+        margin-left: 150px;
+    }
+    .listaNav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .infoEmpresa{
+        margin-top: 5px;
+        max-width: 80%;
+        font-size: 12px;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    /*Carrito*/
+    header{
+        div{
+            img{
+                width: 70px;
+            }
+        }
+    }
+    .itemsCarrito{
+        gap: 5px;
+        margin-left: 5px;
+        width: 400px;
+        height: 60px;
+    }
+    .cardProdCarrito{
+        margin-left: 5px;
+        gap: 3px;
+        width: 400px;
+        height: 80px;
+    }
+    .cantidadProducto{
+        margin-right: 5px;
+    }
+    .descripcionProducto{
+        margin-right: 120px;
+    }
+    .precioUnitario{
+        margin-right: 10px;
+    }
+    .totalPedido{
+        margin: 10px;
+        margin-left: 05px;
+        padding: 1px;
+        gap: 40px;
+        border: 2px solid black;
+        width: 400px;
+        height: 80px;
+    }
+    .footerCarrito{
+        display: flex;
+    }
+    .imgFooterCarrito{
+        display: flex;
+    }
+    .imgFooterCarrito{
+        img{
+            height: 70px;
+        }
+    }
+    /*Mis pedidos*/
+    .tituloMisPedidos{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .botonPedidos{
+        margin-top: 25px;
+    }
+    .cardPedidos{
+        width: 400px;
+        align-self: center;
+    } 
+    .esquemaPedidos{
+        gap: 5px;
+    }
+    .pedidoYfecha{
+        font-size: 12px;
+    }
+    .importeYestado{
+        font-size: 12px;
+    }
+    .footerPedidos{
+        display: flex;
+    }
+    .imgFooterPedidos{
+        display: flex;
+    }
+    .imgFooterPedidos{
+        img{
+            height: 70px;
+        }
+    }
+}

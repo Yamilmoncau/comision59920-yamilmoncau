@@ -1,0 +1,140 @@
+@media(max-width:385px){
+    /*registro*/
+    .formularioEtiquetas{
+        input{
+            max-width: 120px;
+        }
+    }
+    .botonIngresarSinRegistro{
+        margin-left: 120px;
+    }
+    /*Pagina principal*/
+    .imagenPaginaPrincipal{
+        margin-top: 10px;
+        width: 100%;
+        height: 190px;
+        display: flex;
+        justify-content: center;
+    }
+    .listaCategorias{
+        flex-wrap: wrap;
+    }
+    .esquemaProductos{
+        width: 300px;
+        gap: 5px;
+    }
+    .cardProductos{
+        border: 2px solid black;
+        border-radius: 5px;
+        width: 280px;
+        height: 130px;
+        background-color: lightslategray;
+        margin: 10PX;
+        display: flex;
+        flex-wrap: wrap;
+    } 
+    .cardProductos{
+        div{
+            img{
+                width: 30%;
+                height: 95%;
+                object-fit: cover;
+                margin: 10px;
+            }
+        }
+    }
+    .cardProductos{
+        div{
+            width: 100%;
+            height: 100px;
+        }
+    }
+    .cardProductos{
+        h3{
+            position: absolute;
+            text-align: center;
+            margin-left: 100px;
+            margin-bottom: 5px;
+            margin-top: 15px;
+        }
+    }
+    .cardProductos{
+        p{
+            position: absolute;
+            text-align: center;
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+    }
+    .cardProductos{
+        button{
+            position: absolute;
+            cursor: pointer;
+            margin-left: 160px;
+            margin-top: 100px;
+        }
+    }
+    .imgFooterPrincipal{
+        img{
+            height: 50px;
+        }
+    }
+    .fuente{
+        font-size: map-get($fuentes-sitio, xs );
+    }    
+    /*Mi cuenta*/
+    .tituloMiCuenta{
+        font-size: map-get($fuentes-sitio, md );
+        margin-top: 15px;
+    }
+    .cardDatosMiCuenta{
+        margin-left: 25px;
+    }
+    .botonesMiCuenta{
+        margin-top: -150px;
+        margin-left: 290px;
+    }
+    /*Mis pedidos*/
+    .tituloMisPedidos{
+        font-size: map-get($fuentes-sitio, md );
+    }
+    .cardPedidos{
+        width: 360px;
+    } 
+    /*Carrito*/
+        .itemsCarrito{
+        width: 360px;
+    }
+    .itemCarritoProducto{
+        margin-right: 100px;
+        padding: 1px;
+    }
+    .cardProdCarrito{
+        width: 360px;
+    }
+    .cantidadProducto{
+        margin-right: 5px;
+    }
+    .descripcionProducto{
+        margin-right: 80px;
+    }
+    .precioUnitario{
+        margin-right: 10px;
+    }
+    .totalPedido{
+        width: 360px;
+        height: 80px;
+        gap: 10px;
+    }
+    .footerCarrito{
+        display: flex;
+    }
+    .imgFooterCarrito{
+        display: flex;
+    }
+    .imgFooterCarrito{
+        img{
+            height: 60px;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+/*Siempre llamar a los partial que esten en utilities*/
+@import "./utilities/variables";
+@import "./utilities/maps";
+@import "./utilities/mixins";
+@import "./utilities/function";
+
+/*2do se llama a todo lo que corresponde a base*/
+@import "./base/reset";
+@import "./base/tipografias";
+
+/*3ro se llama a todo lo que corresponde a layout*/
+
+@import "./layout/header";
+@import "./layout/banner-y-botones";
+@import "./layout/main-index";
+@import "./layout/main-registro";
+@import "./layout/main-pagina-principal";
+@import "./layout/main-tres-puntitos";
+@import "./layout/main-mi-cuenta";
+@import "./layout/main-mis-pedidos";
+@import "./layout/main-carrito";
+@import "./layout/footer";
+
+/*Por ultimo siempre al final se llama a los mediaQ*/
+
+@import "./layout/mediaQ/mediaQ780";
+@import "./layout/mediaQ/mediaQ425";
+@import "./layout/mediaQ/mediaQ375";
+@import "./layout/mediaQ/mediaQ320";

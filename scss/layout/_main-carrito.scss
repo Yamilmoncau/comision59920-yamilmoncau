@@ -1,0 +1,125 @@
+/*Carrito*/
+.botonHeaderCarrito{
+    display: flex;
+    align-items: center;
+}
+.imgCarrito{
+    margin: 1px;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    max-width: 20%;
+}
+.CardItemsCarrito{
+    @include flexrow;
+    margin-bottom: 5px;
+}
+.itemsCarrito{
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    margin-left: 20px;
+    padding: 1px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 900px;
+    height: 40px;
+    display: grid;
+    grid-template-columns: .5fr 3fr .5fr .5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "cant producto unitario total"
+    ;
+}
+.cant{
+    grid-area: cant;
+    margin-left: 5px;
+    align-self: center;
+}
+.producto{
+    grid-area: producto;
+    align-self: center;
+}
+.unitario{
+    grid-area: unitario;
+    align-self: center;
+}
+.total{
+    grid-area: total;
+    align-self: center;
+}
+.todosProductos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.cardProdCarrito{
+    margin-left: 20px;
+    margin-bottom: 5px;
+    padding: 1px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 900px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: .25fr .25fr 3fr .5fr .5fr;
+    grid-template-rows: repeat(2 1fr);
+    grid-template-areas:
+    "botonesSumaResta cantidadProducto descripcionProducto precioUnitario precioTotal"
+    "botonesSumaResta cantidadProducto descripcionProducto precioUnitario precioTotal"
+    ;
+}
+.cantidadProducto{
+    grid-area: cantidadProducto;
+    align-self: center;
+}
+.descripcionProducto{
+    grid-area: descripcionProducto;
+    align-self: center;
+}
+.precioUnitario{
+    grid-area: precioUnitario;
+    align-self: center;
+}
+.botonesSumaResta{
+    max-width: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1px;
+    grid-area: botonesSumaResta;
+}
+.precioTotal{
+    grid-area: precioTotal;
+    align-self: center;
+}
+.cardTotalPedido{
+    @include flexrow;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.totalPedido{
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 1px;
+    @include flexrow;
+    align-items: center;
+    gap: 40px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 900px;
+    height: 80px;
+}
+.footerCarrito{
+    display: flex;
+}
+.imgFooterCarrito{
+    display: flex;
+    img{
+        height: 120px;
+    }
+}
+
