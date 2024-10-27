@@ -34,9 +34,7 @@
     margin: 5px 5px 0px 5px;
 }
 .importeYestado{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    @extend .pedidoYfecha;
     margin: 10px 5px 0px 5px;
 }
 .footerPedidos{
@@ -44,8 +42,7 @@
 }
 .imgFooterPedidos{
     display: flex;
-}
-.imgFooterPedidos{
+    
     img{
         height: 120px;
     }

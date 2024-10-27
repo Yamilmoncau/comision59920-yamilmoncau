@@ -12,13 +12,14 @@ h1 {
   font-size: 50px; }
 
 h3 {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  font-family: Arial, Helvetica, sans-serif; }
 
 p {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
 
 /*3ro se llama a todo lo que corresponde a layout*/
 header {
+  height: auto;
   background-color: #1bb5e9;
   padding: 1px;
   margin: 1px;
@@ -27,7 +28,7 @@ header {
   justify-content: space-around; }
 
 .banner {
-  height: 580px;
+  height: 80vh;
   width: 100%;
   background-image: url("../../assets/img/bannerPrincipal1.png");
   background-image: url("../assets/img/bannerPrincipal1.png");
@@ -72,14 +73,8 @@ header {
   display: flex;
   justify-content: center; }
 
-.footerInicio {
+.footerInicio, .imgFooterInicio {
   display: flex; }
-
-.imgFooterInicio {
-  display: flex; }
-
-.imgFooterInicio img {
-  height: 120px; }
 
 .fuente {
   font-size: 1.5rem; }
@@ -106,13 +101,13 @@ header {
   border-radius: 10px;
   background-color: white; }
 
+.fuenteform {
+  font-size: 12px; }
+
 .botonIngresarSinRegistro {
   margin-left: 55px; }
 
-.footerRegistro {
-  display: flex; }
-
-.imgFooterRegistro {
+.footerRegistro, .imgFooterRegistro {
   display: flex; }
 
 .imgFooterRegistro img {
@@ -170,12 +165,24 @@ header {
     margin-bottom: 5px;
     margin-top: 15px; }
   .cardProductos p {
-    text-align: center;
+    text-align: start;
+    margin-left: 20px;
     margin-top: 15px; }
   .cardProductos button {
-    margin-left: 80px;
-    margin-top: 10px;
-    cursor: pointer; }
+    margin-left: 110px;
+    margin-top: -20px;
+    cursor: pointer;
+    background-color: #308028;
+    color: white;
+    padding: 10px;
+    border-radius: 5px; }
+    .cardProductos button:hover {
+      background-color: #00ff0d; }
+    .cardProductos button img {
+      border-radius: 5px;
+      width: 30px;
+      height: 30px;
+      object-fit: contain; }
 
 .botonCarrito {
   position: fixed;
@@ -187,9 +194,8 @@ header {
 
 .imgFooterPrincipal {
   display: flex; }
-
-.imgFooterPrincipal img {
-  height: 120px; }
+  .imgFooterPrincipal img {
+    height: 120px; }
 
 /*tres puntitos*/
 .listaNav {
@@ -259,9 +265,8 @@ header {
 
 .imgFooterCuenta {
   display: flex; }
-
-.imgFooterCuenta img {
-  height: 120px; }
+  .imgFooterCuenta img {
+    height: 120px; }
 
 /*Mis Pedidos*/
 .leyendaCantPedidos {
@@ -295,16 +300,13 @@ header {
   background-color: lightslategray;
   margin: 10PX; }
 
-.pedidoYfecha {
+.pedidoYfecha, .importeYestado {
   display: flex;
   justify-content: space-between;
   gap: 10px;
   margin: 5px 5px 0px 5px; }
 
 .importeYestado {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
   margin: 10px 5px 0px 5px; }
 
 .footerPedidos {
@@ -312,9 +314,8 @@ header {
 
 .imgFooterPedidos {
   display: flex; }
-
-.imgFooterPedidos img {
-  height: 120px; }
+  .imgFooterPedidos img {
+    height: 120px; }
 
 /*Carrito*/
 .botonHeaderCarrito {
@@ -441,6 +442,7 @@ header {
     height: 120px; }
 
 footer {
+  height: auto;
   background-color: #1bb5e9;
   padding: 1px;
   margin: 1px;
@@ -452,7 +454,7 @@ footer {
 @media (max-width: 780px) {
   /*Inicio de sesion*/
   header {
-    height: 120px; }
+    height: auto; }
     header h1 {
       font-size: 80px;
       font-weight: bold;
@@ -461,8 +463,6 @@ footer {
       margin-bottom: 10px;
       margin-right: 10px;
       color: white; }
-  .banner {
-    height: 500px; }
   .cardInicioSesion {
     max-width: 30%; }
   .inicioSesion {
@@ -495,15 +495,17 @@ footer {
   .imgFooterRegistro {
     display: flex;
     align-items: center; }
-  .imgFooterRegistro img {
-    height: 70px; }
+    .imgFooterRegistro img {
+      height: 70px; }
   .botonIngresarSinRegistro {
     margin-left: 55px; }
   .fuenteBoton {
     font-size: 0.625rem; }
-  footer p {
-    display: flex;
-    align-items: center; }
+  footer {
+    height: auto; }
+    footer p {
+      display: flex;
+      align-items: center; }
   /*Pagina principal*/
   header div img {
     margin-top: 25px; }
@@ -514,6 +516,8 @@ footer {
   .imgFooterPrincipal {
     display: flex;
     align-items: center; }
+    .imgFooterPrincipal img {
+      height: 70px; }
   /*Mi cuenta*/
   .imgLogin img {
     margin-left: 60px;
@@ -532,8 +536,8 @@ footer {
   .imgFooterCuenta {
     display: flex;
     align-items: center; }
-  .imgFooterCuenta img {
-    height: 70px; }
+    .imgFooterCuenta img {
+      height: 70px; }
   /*Tres puntitos*/
   .infoEmpresa1 {
     margin-top: 1px;
@@ -590,20 +594,20 @@ footer {
     align-items: center; }
   .imgFooterPedidos {
     display: flex; }
-  .imgFooterPedidos img {
-    height: 70px; }
+    .imgFooterPedidos img {
+      height: 70px; }
   footer {
-    height: 120px; } }
+    height: auto; } }
 
 @media (max-width: 600px) {
   header {
-    height: 70px; }
+    height: auto; }
     header h1 {
       font-size: 40px; }
   /*Inicio de sesion*/
   .banner {
     background-image: url("../assets/img/bannerInicio320.png");
-    height: 500px;
+    height: 80vh;
     width: 100%; }
   .cardInicioSesion {
     flex-direction: row;
@@ -670,30 +674,30 @@ footer {
     margin: 10PX;
     display: flex;
     flex-wrap: wrap; }
-  .cardProductos div img {
-    width: 30%;
-    height: 95%;
-    object-fit: cover;
-    margin: 10px; }
-  .cardProductos div {
-    width: 100%;
-    height: 130px; }
-  .cardProductos h3 {
-    position: absolute;
-    text-align: center;
-    margin-left: 140px;
-    margin-bottom: 5px;
-    margin-top: 15px; }
-  .cardProductos p {
-    position: absolute;
-    text-align: center;
-    margin-top: 50px;
-    margin-left: 140px; }
-  .cardProductos button {
-    position: absolute;
-    cursor: pointer;
-    margin-left: 250px;
-    margin-top: 100px; }
+    .cardProductos div {
+      width: 100%;
+      height: 130px; }
+      .cardProductos div img {
+        width: 30%;
+        height: 95%;
+        object-fit: cover;
+        margin: 10px; }
+    .cardProductos h3 {
+      position: absolute;
+      text-align: center;
+      margin-left: 140px;
+      margin-bottom: 5px;
+      margin-top: 15px; }
+    .cardProductos p {
+      position: absolute;
+      text-align: center;
+      margin-top: 50px;
+      margin-left: 140px; }
+    .cardProductos button {
+      position: absolute;
+      cursor: pointer;
+      margin-left: 280px;
+      margin-top: 80px; }
   /*Mi cuenta*/
   .datosArticle {
     display: flex; }
@@ -776,7 +780,7 @@ footer {
     align-self: center; }
   .esquemaPedidos {
     gap: 5px; }
-  .pedidoYfecha {
+  .pedidoYfecha, .importeYestado {
     font-size: 12px; }
   .importeYestado {
     font-size: 12px; }
@@ -784,8 +788,8 @@ footer {
     display: flex; }
   .imgFooterPedidos {
     display: flex; }
-  .imgFooterPedidos img {
-    height: 70px; } }
+    .imgFooterPedidos img {
+      height: 70px; } }
 
 @media (max-width: 385px) {
   /*registro*/
@@ -814,14 +818,14 @@ footer {
     margin: 10PX;
     display: flex;
     flex-wrap: wrap; }
-  .cardProductos div img {
-    width: 30%;
-    height: 95%;
-    object-fit: cover;
-    margin: 10px; }
   .cardProductos div {
     width: 100%;
     height: 100px; }
+    .cardProductos div img {
+      width: 30%;
+      height: 95%;
+      object-fit: cover;
+      margin: 10px; }
   .cardProductos h3 {
     position: absolute;
     text-align: center;
@@ -834,10 +838,18 @@ footer {
     margin-top: 50px;
     margin-left: 100px; }
   .cardProductos button {
+    width: 40px;
+    height: 40px;
     position: absolute;
     cursor: pointer;
-    margin-left: 160px;
-    margin-top: 100px; }
+    margin-left: 200px;
+    margin-top: 70px; }
+    .cardProductos button img {
+      margin-top: -7px;
+      margin-left: -7px;
+      width: 30px;
+      height: 30px;
+      object-fit: contain; }
   .imgFooterPrincipal img {
     height: 50px; }
   .fuente {
@@ -878,8 +890,8 @@ footer {
     display: flex; }
   .imgFooterCarrito {
     display: flex; }
-  .imgFooterCarrito img {
-    height: 60px; } }
+    .imgFooterCarrito img {
+      height: 60px; } }
 
 @media (max-width: 330px) {
   /*Registro*/
@@ -887,8 +899,6 @@ footer {
     max-width: 90px; }
   .imgFooterInicio img {
     height: 70px; }
-  .formularioEtiquetas input {
-    max-width: 100px; }
   .botonIngresarSinRegistro {
     margin-left: 100px; }
   /*Mi cuenta*/
@@ -922,7 +932,7 @@ footer {
     display: flex; }
   .imgFooterPedidos img {
     height: 60px; }
-  .pedidoYfecha {
+  .pedidoYfecha, .importeYestado {
     font-size: 12px; }
   /*Carrito*/
   .itemsCarrito {

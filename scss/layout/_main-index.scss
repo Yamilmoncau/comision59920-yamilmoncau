@@ -25,14 +25,9 @@
     display: flex;
 }
 .imgFooterInicio{
-    display: flex;
+    @extend .footerInicio;
 }
-.imgFooterInicio{
-    img{
-        height: 120px;
-    }
-    
-}
+
 .fuente{
     font-size: map-get($fuentes-sitio , md );
 }
