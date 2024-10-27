@@ -1,4 +1,7 @@
 /*Carrito*/
+.mainCarrito{
+    height: auto;
+}
 .botonHeaderCarrito{
     display: flex;
     align-items: center;
@@ -114,6 +117,7 @@
     height: 80px;
 }
 .footerCarrito{
+    height: auto;
     display: flex;
 }
 .imgFooterCarrito{
