@@ -10,16 +10,30 @@
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-        <header>
-            <div>
-                <a href="../pages/tres-puntitos.html"><button class="BotonesPrincipales botonPedidos">Tres puntitos</button></a>
-            </div>
-            <div>
+        <header class="header">
+            <nav class="navbar">
+                <label class="labelHamburguesa" for="menu_hamburguesa">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    width="25" 
+                    height="25" 
+                    fill="currentColor" 
+                    class="ListIcon" 
+                    viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" 
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </label>
+                <input class="menu_hamburguesa" type="checkbox" name="" id="menu_hamburguesa">
+                <ul class="ulLinks">
+                    <li class="liLinks"><a href="../pages/pagina-principal.html" class="link"><Button class="botonesPrincipales">pagina principal</Button></a></li>
+                    <li class="liLinks"><a href="../pages/mi-cuenta.html" class="link"><Button class="botonesPrincipales">mi cuenta</Button></a></li>
+                    <li class="liLinks"><a href="../pages/mis-pedidos.html" class="link"><Button class="botonesPrincipales">mis pedidos</Button></a></li>
+                    <li class="liLinks"><a href="../pages/carrito.html" class="link"><Button class="botonesPrincipales">Carrito</Button></a></li>
+                    <li class="liLinks"><a href="../index.html" class="link"><Button class="botonesPrincipales">Iniciar/cerrar sesion</Button></a></li>    
+                </ul>
                 <h1 class="tituloMisPedidos">Mis Pedidos</h1>
-            </div>
-            <div>
                 <a href="../index.html"><Button class="BotonesPrincipales botonPedidos">Iniciar/cerrar sesion</Button></a>
-            </div>
+            </nav>
         </header>
         <main class="mainPedidos">
             <section class="leyendaCantPedidos">

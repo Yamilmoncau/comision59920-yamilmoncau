@@ -7,3 +7,69 @@ header{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.header
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+.navbar{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    h1{
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+    div{
+        img{
+            margin-left: 20rem;
+            margin-right: 20rem;
+        }
+    }
+}
+.menu_hamburguesa:checked + .ulLinks{
+    height: 300%;
+    transition: all .8s;
+}
+
+.menu_hamburguesa{
+    display: none;
+
+}
+
+.labelHamburguesa{
+
+}
+
+.ListIcon{
+    cursor: pointer;
+
+}
+
+.ulLinks{
+    width: 15%;
+    position: absolute;
+    top: 66px;
+    left: -40px;
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+}
+
+.liLink{
+
+}
+
+.link{
+
+}
+
+.tituloMisPedidos{
+
+}
