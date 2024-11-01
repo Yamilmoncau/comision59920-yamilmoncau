@@ -1,5 +1,5 @@
 header{
-    height: auto;
+    height: 70px;
     background-color:$color;
     padding: 1px;
     margin: 1px;
@@ -22,8 +22,8 @@ ul li{
     flex-wrap: wrap;
     position: relative;
     h1{
-        margin-left: 20rem;
-        margin-right: 20rem;
+        margin-left: 15rem;
+        margin-right: 15rem;
     }
     div{
         img{
@@ -32,8 +32,9 @@ ul li{
         }
     }
 }
+
 .menu_hamburguesa:checked + .ulLinks{
-    height: 300%;
+    height: 260%;
     transition: all .8s;
 }
 
@@ -42,9 +43,6 @@ ul li{
 
 }
 
-.labelHamburguesa{
-
-}
 
 .ListIcon{
     cursor: pointer;
@@ -52,24 +50,13 @@ ul li{
 }
 
 .ulLinks{
-    width: 15%;
+    width: 20%;
     position: absolute;
+    background-color: $color;
     top: 66px;
     left: -40px;
     display: flex;
     flex-direction: column;
     height: 0;
     overflow: hidden;
-}
-
-.liLink{
-
-}
-
-.link{
-
-}
-
-.tituloMisPedidos{
-
 }

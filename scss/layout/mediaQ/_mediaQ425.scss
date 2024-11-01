@@ -5,6 +5,31 @@
             font-size: 40px;
         }
     }
+    .header{
+        h1{
+            font-size: 30px;
+        }
+    }
+    .navbar{
+        h1{
+            margin-left: 2.1rem;
+            margin-right: 2.1rem;
+        }
+        div{
+            img{
+                margin-left: 5rem;
+                margin-right: 5rem;
+            }
+        }
+    }
+    .menu_hamburguesa:checked + .ulLinks{
+        height: 260%;
+    }
+    .ulLinks{
+        width: 30%;
+        top: 66px;
+        left: -9px;
+    }
     
     /*Inicio de sesion*/
     .banner{

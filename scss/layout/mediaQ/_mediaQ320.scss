@@ -1,4 +1,31 @@
 @media(max-width:330px){
+    /*Header*/
+    .header{
+        h1{
+            font-size: 18px;
+        }
+    }
+    .navbar{
+        h1{
+            margin-left: 1.3rem;
+            margin-right: 1.3rem;
+        }
+        div{
+            img{
+                margin-left: 2.19rem;
+                margin-right: 2.19rem;
+            }
+        }
+    }
+    .menu_hamburguesa:checked + .ulLinks{
+        height: 260%;
+    }
+    .ulLinks{
+        width: 30%;
+        top: 66px;
+        left: -2px;
+    }
+    
     /*Registro*/
     .formularioEtiquetas{
         input{

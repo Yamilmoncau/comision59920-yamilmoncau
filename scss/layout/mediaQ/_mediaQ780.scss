@@ -3,7 +3,7 @@
     header{
         height: auto;
         h1{
-            font-size: 80px;
+            font-size: 45px;
             font-weight: bold;
             margin-top: 10px;
             margin-left: 10px;
@@ -11,6 +11,12 @@
             margin-right: 10px;
             color: white;
         }
+    }
+    .ulLinks{
+        left: -10px;
+    }
+    .botonHeader{
+        margin: 20px;
     }
     .cardInicioSesion{
         max-width: 30%;
@@ -75,10 +81,23 @@
     header{
         div{
             img{
-                margin-top: 25px;
+                margin-top: 1px;
             }
         }
     }
+
+.navbar{
+    h1{
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+    div{
+        img{
+            margin-left: 15rem;
+            margin-right: 15rem;
+        }
+    }
+}
     .esquemaProductos{
         width: 760px;
     }

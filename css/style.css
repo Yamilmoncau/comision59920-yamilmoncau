@@ -19,7 +19,7 @@ p {
 
 /*3ro se llama a todo lo que corresponde a layout*/
 header {
-  height: auto;
+  height: 70px;
   background-color: #1bb5e9;
   padding: 1px;
   margin: 1px;
@@ -41,14 +41,14 @@ ul li {
   flex-wrap: wrap;
   position: relative; }
   .navbar h1 {
-    margin-left: 20rem;
-    margin-right: 20rem; }
+    margin-left: 15rem;
+    margin-right: 15rem; }
   .navbar div img {
     margin-left: 20rem;
     margin-right: 20rem; }
 
 .menu_hamburguesa:checked + .ulLinks {
-  height: 300%;
+  height: 260%;
   transition: all .8s; }
 
 .menu_hamburguesa {
@@ -58,8 +58,9 @@ ul li {
   cursor: pointer; }
 
 .ulLinks {
-  width: 15%;
+  width: 20%;
   position: absolute;
+  background-color: #1bb5e9;
   top: 66px;
   left: -40px;
   display: flex;
@@ -365,10 +366,6 @@ ul li {
 .mainCarrito {
   height: auto; }
 
-.botonHeaderCarrito {
-  display: flex;
-  align-items: center; }
-
 .imgCarrito {
   margin: 1px;
   padding: 1px;
@@ -504,13 +501,17 @@ footer {
   header {
     height: auto; }
     header h1 {
-      font-size: 80px;
+      font-size: 45px;
       font-weight: bold;
       margin-top: 10px;
       margin-left: 10px;
       margin-bottom: 10px;
       margin-right: 10px;
       color: white; }
+  .ulLinks {
+    left: -10px; }
+  .botonHeader {
+    margin: 20px; }
   .cardInicioSesion {
     max-width: 30%; }
   .inicioSesion {
@@ -556,7 +557,13 @@ footer {
       align-items: center; }
   /*Pagina principal*/
   header div img {
-    margin-top: 25px; }
+    margin-top: 1px; }
+  .navbar h1 {
+    margin-left: 10rem;
+    margin-right: 10rem; }
+  .navbar div img {
+    margin-left: 15rem;
+    margin-right: 15rem; }
   .esquemaProductos {
     width: 760px; }
   .imgFooterPrincipal img {
@@ -652,6 +659,20 @@ footer {
     height: auto; }
     header h1 {
       font-size: 40px; }
+  .header h1 {
+    font-size: 30px; }
+  .navbar h1 {
+    margin-left: 2.1rem;
+    margin-right: 2.1rem; }
+  .navbar div img {
+    margin-left: 5rem;
+    margin-right: 5rem; }
+  .menu_hamburguesa:checked + .ulLinks {
+    height: 260%; }
+  .ulLinks {
+    width: 30%;
+    top: 66px;
+    left: -9px; }
   /*Inicio de sesion*/
   .banner {
     background-image: url("../assets/img/bannerInicio320.png");
@@ -840,6 +861,21 @@ footer {
       height: 70px; } }
 
 @media (max-width: 385px) {
+  /*Header*/
+  .header h1 {
+    font-size: 20px; }
+  .navbar h1 {
+    margin-left: 2.1rem;
+    margin-right: 2.1rem; }
+  .navbar div img {
+    margin-left: 3rem;
+    margin-right: 3rem; }
+  .menu_hamburguesa:checked + .ulLinks {
+    height: 260%; }
+  .ulLinks {
+    width: 30%;
+    top: 66px;
+    left: -9px; }
   /*registro*/
   .formularioEtiquetas input {
     max-width: 120px; }
@@ -942,6 +978,21 @@ footer {
       height: 60px; } }
 
 @media (max-width: 330px) {
+  /*Header*/
+  .header h1 {
+    font-size: 18px; }
+  .navbar h1 {
+    margin-left: 1.3rem;
+    margin-right: 1.3rem; }
+  .navbar div img {
+    margin-left: 2.19rem;
+    margin-right: 2.19rem; }
+  .menu_hamburguesa:checked + .ulLinks {
+    height: 260%; }
+  .ulLinks {
+    width: 30%;
+    top: 66px;
+    left: -2px; }
   /*Registro*/
   .formularioEtiquetas input {
     max-width: 90px; }
