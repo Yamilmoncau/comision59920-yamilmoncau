@@ -4,6 +4,27 @@ footer{
     padding: 1px;
     margin: 1px;
     display: flex;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-around;
+    img{
+        height: 120px;
+        
+    }
+}
+
+.footersection1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footersection2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: center;
+    gap: 20px;
+    width: 70%;
 }

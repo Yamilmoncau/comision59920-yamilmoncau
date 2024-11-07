@@ -230,14 +230,6 @@ ul li {
   bottom: 0;
   right: 0; }
 
-.footerPrincipal {
-  display: flex; }
-
-.imgFooterPrincipal {
-  display: flex; }
-  .imgFooterPrincipal img {
-    height: 120px; }
-
 /*tres puntitos*/
 .listaNav {
   list-style: none; }
@@ -492,8 +484,25 @@ footer {
   padding: 1px;
   margin: 1px;
   display: flex;
+  flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-around; }
+  footer img {
+    height: 120px; }
+
+.footersection1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.footersection2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-self: center;
+  gap: 20px;
+  width: 70%; }
 
 /*Por ultimo siempre al final se llama a los mediaQ*/
 @media (max-width: 780px) {
@@ -521,11 +530,6 @@ footer {
     flex-direction: column;
     max-width: 20%;
     align-items: center; }
-  .imgFooterInicio {
-    display: flex;
-    align-items: center; }
-  .imgFooterInicio img {
-    height: 70px; }
   .fuente {
     font-size: 1.5rem; }
   /*Registro*/
@@ -541,20 +545,10 @@ footer {
     border-radius: 10px;
     background-color: white;
     max-width: 80%; }
-  .imgFooterRegistro {
-    display: flex;
-    align-items: center; }
-    .imgFooterRegistro img {
-      height: 70px; }
   .botonIngresarSinRegistro {
     margin-left: 55px; }
   .fuenteBoton {
     font-size: 0.625rem; }
-  footer {
-    height: auto; }
-    footer p {
-      display: flex;
-      align-items: center; }
   /*Pagina principal*/
   header div img {
     margin-top: 1px; }
@@ -566,13 +560,6 @@ footer {
     margin-right: 15rem; }
   .esquemaProductos {
     width: 760px; }
-  .imgFooterPrincipal img {
-    height: 70px; }
-  .imgFooterPrincipal {
-    display: flex;
-    align-items: center; }
-    .imgFooterPrincipal img {
-      height: 70px; }
   /*Mi cuenta*/
   .imgLogin img {
     margin-left: 60px;
@@ -586,13 +573,6 @@ footer {
     gap: 6px; }
   .datosMiCuenta {
     font-size: 0.625rem; }
-  .footerCuenta {
-    display: flex; }
-  .imgFooterCuenta {
-    display: flex;
-    align-items: center; }
-    .imgFooterCuenta img {
-      height: 70px; }
   /*Tres puntitos*/
   .infoEmpresa1 {
     margin-top: 1px;
@@ -630,29 +610,18 @@ footer {
     border: 2px solid black;
     width: 700px;
     height: 80px; }
-  .footerCarrito {
-    display: flex;
-    align-items: center; }
-  .imgFooterCarrito {
-    display: flex;
-    align-items: center; }
-  .imgFooterCarrito img {
-    height: 70px; }
   /*Mis pedidos*/
   .botonPedidos {
     margin-top: 40px; }
   .cardPedidos {
     width: 700px;
     align-self: center; }
-  .footerPedidos {
+  footer img {
+    height: 90px; }
+  .footersection1 {
     display: flex;
-    align-items: center; }
-  .imgFooterPedidos {
-    display: flex; }
-    .imgFooterPedidos img {
-      height: 70px; }
-  footer {
-    height: auto; } }
+    flex-direction: column;
+    gap: 20px; } }
 
 @media (max-width: 600px) {
   header {
