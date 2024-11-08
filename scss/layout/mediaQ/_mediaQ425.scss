@@ -117,7 +117,7 @@
         border-radius: 5px;
         width: 380px;
         height: 150px;
-        background-color: lightslategray;
+        background-color: #bad8c2;
         margin: 10PX;
         display: flex;
         flex-wrap: wrap;
@@ -177,9 +177,6 @@
         font-size: 12px;
         margin-left: 5px;
     }
-    .imgFooterCuenta img{
-        height: 70px;
-    }
     /*Tres puntitos*/
     .banner h1{
         font-size: 20px;
@@ -236,17 +233,6 @@
         width: 400px;
         height: 80px;
     }
-    .footerCarrito{
-        display: flex;
-    }
-    .imgFooterCarrito{
-        display: flex;
-    }
-    .imgFooterCarrito{
-        img{
-            height: 70px;
-        }
-    }
     /*Mis pedidos*/
     .tituloMisPedidos{
         font-size: 30px;
@@ -268,13 +254,10 @@
     .importeYestado{
         font-size: 12px;
     }
-    .footerPedidos{
-        display: flex;
-    }
-    .imgFooterPedidos{
-        display: flex;
+    footer{
         img{
-            height: 70px;
+            height: 90px;
+            
         }
     }
 }

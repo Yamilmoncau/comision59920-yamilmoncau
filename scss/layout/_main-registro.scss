@@ -23,13 +23,4 @@
 .botonIngresarSinRegistro{
     margin-left: 55px;
 }
-.footerRegistro{
-    display: flex;
-}
-.imgFooterRegistro{
-    @extend .footerRegistro;
-    img{
-        height: 120px;
-    }
     
-}

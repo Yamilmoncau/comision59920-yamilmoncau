@@ -1,7 +1,4 @@
 /*Mis Pedidos*/
-.mainPedidos{
-    height: 80vh;
-}
 .leyendaCantPedidos{
     width: 200px;
     height: 50px;
@@ -10,6 +7,7 @@
     padding: 1px;
     margin: auto;
     margin-top: 35px;
+    margin-bottom: 35px;
     background-color: rgb(158, 135, 135);
     display: flex;
     justify-content: center;
@@ -18,7 +16,6 @@
 .esquemaPedidos{
     @include flexcol;
     flex-wrap: wrap;
-    width: auto;
     gap: 30px;
     margin: auto;
 }
@@ -39,15 +36,4 @@
 .importeYestado{
     @extend .pedidoYfecha;
     margin: 10px 5px 0px 5px;
-}
-.footerPedidos{
-    height: auto;
-    display: flex;
-}
-.imgFooterPedidos{
-    display: flex;
-
-    img{
-        height: 120px;
-    }
 }
